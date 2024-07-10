@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java Programs</title>
+    <link rel="stylesheet" href="website.css">
+</head>
+<body>
+    <header>
+        <h1>Java Programs</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Program 1: Hello World</h2>
+            <pre>
+<code>
+    package haritha.com;
+    public class helloWorld{
+        public static void main(String [] args){
+            System.out.println( "Hello World");
+        }
+    }
+</code>
+            </pre>
+        </section>
+        <section>
+
+            <h2>Program 2: Average of 5 numbers</h2>
+            <pre>
+<code>
+public class averageOf5Num {
+    public static void main(String[] args){
+        int num1, num2, num3, num4, num5;
+        Scanner input = new Scanner(System.in);
+        System.out.print("Input first number:");
+        num1= input.nextInt();
+        System.out.print("Input second number:");
+        num2= input.nextInt();
+        System.out.print("Input third number:");
+        num3= input.nextInt();
+        System.out.print("Input fourth number:");
+        num4= input.nextInt();
+        System.out.print("Input fifth number:");
+        num5= input.nextInt();
+        System.out.print("Average of the number : " + ((num1+num2+num3+num4+num5)/5));
+    }
+}
+</code>
+            </pre>
+        </section>
+
+        <section>
+            <h2>Program 3: Binary Addition of 2 numbers</h2>
+            <pre>
+<code>
+    public class binaryAddOf2Num {
+        public static void main(String[] args){
+            String a= "10";
+            String b= "11";
+            int c= Integer.parseInt(a,2);
+            int d= Integer.parseInt(b,2);
+            int add= c+d;
+            String sum= Integer.toBinaryString(add);
+            System.out.println(sum);
+        }
+    }
+</code>
+</pre>
+
+        <section>
+            <h2>Program 4: Binary Product of 2 numbers</h2>
+            <pre>
+<code>
+    public class binaryProdOf2Num {
+        public static void main(String[]args){
+        String a = "10";
+        String b = "11";
+        int c = Integer.parseInt(a, 2);
+        int d = Integer.parseInt(b, 2);
+        int prod = c * d;
+        String total = Integer.toBinaryString(prod);
+        System.out.print(total);
+    }
+    }
+</code>
+             </pre>
+             </section>
+
+             <section>
+                <h2>Program 5: Binary to Decimal </h2>
+                <pre>
+    <code>
+        public class binaryToDecimal {
+            public static void main(String[] args){
+                Scanner input = new Scanner(System.in);
+                System.out.print("Enter the Binary number: ");
+                String binary = input.next();
+                System.out.print("The Decimal value of " +binary+ " is :");
+                System.out.print(Integer.parseInt(binary,2));
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 6: Binary to Hexadecimal </h2>
+                <pre>
+    <code>
+        public class binaryToHexadecimal {
+            public static void main(String [] args){
+                Scanner input = new Scanner(System.in);
+                System.out.println("Enter the binary number :");
+                String binary= input.next();
+                System.out.println("The Hexadecimal number of " +binary+ " is");
+                System.out.println(Integer.toHexString(Integer.parseInt(binary)));
+            }
+        }        
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 7: Area and Perimeter of Circle</h2>
+                <pre>
+    <code>
+        public class areaAndPerimeterOfCircle {
+            public static void main(String[] args){
+                double radius, perimeter, area;
+                Scanner input = new Scanner(System.in);
+                System.out.println("Radius = ");
+                radius = input.nextDouble();
+                perimeter= 2* Math.PI * radius;
+                area= Math.PI* radius* radius;
+                System.out.println("Perimeter is = "+ perimeter);
+                System.out.println("Area is = "+ area);
+                System.out.println("area");
+            }
+        }      
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 8: Area and Perimeter of Rectangle</h2>
+                <pre>
+    <code>
+        public class areaAndPerimeterOfRect {
+            public static void main(String[] args){
+                final double width = 5.6 ;
+                final double height = 8.5;
+                double perimeter, area;
+                perimeter= 2* (width+height);
+                area= width + height;
+                System.out.println( "Area is "+ (width + " + " +height + " = ") + area);
+                System.out.println( "Perimeter is 2 * " + (width+ " + " +height+ " = ") +perimeter);
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 9: Decimal to Binary</h2>
+                <pre>
+    <code>
+        public class decimalToBinary {
+            public static void main(String[] args){
+                Scanner input = new Scanner(System.in);
+                System.out.print("Enter decimal number: ");
+                int number= input.nextInt();
+                System.out.print("Binary Conversion of " +number+ " is : ");
+                System.out.print(Integer.toBinaryString(number));
+                }
+            }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 10: Decimal to Hexadecimal</h2>
+                <pre>
+    <code>
+        public class decimalToHexadecimal {
+            public static void main(String[] args){
+                Scanner input = new Scanner(System.in);
+                System.out.print("Enter the Decimal number: ");
+                int decimal= input.nextInt();
+                System.out.print("The Hexadecimal number of " +decimal+ " is: ");
+                System.out.print(Integer.toHexString(decimal));
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 11: Decimal to Octal</h2>
+                <pre>
+    <code>
+        public class decimalToOctal {
+            public static void main(String[] args){
+                Scanner input= new Scanner(System.in);
+                System.out.print("Enter the decimal number: ");
+                int decimal= input.nextInt();
+                System.out.print("The Octal number of " +decimal+ " is ");
+                System.out.print(Integer.toOctalString(decimal));
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 12: Different Operations</h2>
+                <pre>
+    <code>
+        public class differentOperations1 {
+            public static void main(String[] args){
+                int num1= -5 + 8 * 6;
+                int num2= (55+9) % 9;
+                int num3= 20 + -3 * 5 / 8;
+                int num4= 5 + 15 / 3 * 2 - 8 % 3;
+                System.out.println(num1);
+                System.out.println(num2);
+                System.out.println(num3);
+                System.out.println(num4);
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 13: Decimal Operations</h2>
+                <pre>
+    <code>
+        public class differentOperations2 {
+            public static void main(String[] args){
+        
+                System.out.println((25.5 * 3.5 - 3.5 * 3.5) / (40.5 - 4.5));
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 14: Different Operations in Print Statement</h2>
+                <pre>
+    <code>
+        public class differentOperations3 {
+            public static void main(String[] args){
+                System.out.println(4.0 * (1 - (1.0/3) + (1.0/5) - (1.0/7) + (1.0/9) - (1.0/11)));
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 15: Division of two numbers</h2>
+                <pre>
+    <code>
+        public class divOf2Num {
+            public static void main(String[] args){
+                int div= 50/3;
+                System.out.println( div );
+            }
+        }
+    </code>
+                </pre>
+            </section>
+            
+            <section>
+                <h2>Program 16: Sum of two numbers</h2>
+                <pre>
+    <code>
+        public class sumOf2Num {
+            public static void main(String[] args){
+                int num1=74;
+                int num2=36;
+                int sum=num1+num2;
+                System.out.println(sum);
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 17: Swapping of two variables</h2>
+                <pre>
+    <code>
+        public class swapTwoVariables {
+            public static void main(String [] args){
+                int num1;
+                int num2;
+                int temp;
+                Scanner input = new Scanner(System.in);
+                System.out.print("Enter the number1 = ");
+                num1= input.nextInt();
+                System.out.print("Enter the number2 = ");
+                num2= input.nextInt();
+                temp= num1;
+                num1= num2;
+                num2=temp;
+                System.out.println("After swapping number1 = " + num1);
+                System.out.println("After swapping number2 = " + num2);
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 18: Displaying the Math Tables</h2>
+                <pre>
+    <code>
+        public class userInputOfPrintTables {
+            public static void main(String[] args){
+                int  num;
+                Scanner input = new Scanner (System.in);
+                System.out.println("Input a number: ");
+                num =input.nextInt();
+                for (int i =0; i<10; i++){
+                    System.out.println(num + " X " + (i+1) + " = " + (num*(i+1)));
+                }
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 19: Capitalize the First Letter of the Sentence </h2>
+                <pre>
+    <code>
+        public class capitalizeFirstLetterofSent {
+            public static void main(String[] args) {
+                Scanner in = new Scanner(System.in);
+                System.out.print("Input a Sentence: ");
+                String line = in.nextLine();
+                String upper_case = "";
+                Scanner lineScan = new Scanner(line);
+    
+                while (lineScan.hasNext()) {
+                    String word = lineScan.next();
+                    upper_case = upper_case+ Character.toUpperCase(word.charAt(0)) + word.substring(1) + " ";
+                }
+                System.out.println(upper_case.trim());
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 20: Check Whether the given Integer is Even or Odd </h2>
+                <pre>
+    <code>
+        public class checkEvenOrOdd {
+            public static void main(String[] args) {
+                Scanner in = new Scanner(System.in);
+                System.out.print("Input a number: ");
+                int n = in.nextInt();
+                if (n % 2 == 0) {
+                    System.out.println(1);
+                }
+                else {
+                    System.out.println(0);
+                }
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 21: Comparing of Two Variables</h2>
+                <pre>
+    <code>
+        public class compareTwoNum {
+            public static void main(String[] args) {
+                int number1;
+                int number2;
+                Scanner input = new Scanner(System.in);
+                System.out.print("Enter the first integer: ");
+                number1 = input.nextInt();
+                System.out.print("Enter the second integer: ");
+                number2 = input.nextInt();
+                if (number1 > number2) {
+                    System.out.print(number1 + " is greater than " + number2);
+                }
+                else if (number2 > number1) {
+                    System.out.print(number2 + " is greater than " + number1);
+                }
+                else {
+                    System.out.println("Both are equal");
+                }
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 22: Compute the Value of given Integer as n+nn+nnn</h2>
+                <pre>
+    <code>
+        public class computeAsThreeSec {
+            public static void main(String[] args) {
+                int n;
+                char s1, s2, s3;
+                Scanner input = new Scanner(System.in);
+                System.out.print("Input number: ");
+                n = input.nextInt();
+                System.out.printf("%d + %d%d  + %d%d%d\n", n, n, n, n, n, n);
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 23: Count the Factors of the Number</h2>
+                <pre>
+    <code>
+        public class countFactorsOfNum {
+            public static void main(String[] args) {
+                Scanner in = new Scanner(System.in);
+                System.out.print("Input an integer: ");
+                int x = in.nextInt();
+                System.out.println(result(x));
+            }
+            public static int result(int num) {
+                int count = 0;
+                for (int i = 1; i <= (int) Math.sqrt(num); i++) {
+                    if (num % i == 0 && i * i != num) {
+                        count += 2;
+                    }
+                    else if (i * i == num) {
+                        count ++;
+                    }
+                }
+                return count;
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 24: Count letters, spaces, numbers and other characters in an input string. </h2>
+                <pre>
+    <code>
+        public class countLetterSpaceNumOther {
+            public static void main(String[] args) {
+                String test = "Haritha @07";
+        
+                char[] ch = test.toCharArray();
+                int letter = 0;
+                int space = 0;
+                int num = 0;
+                int otherchar = 0;
+                for(int i = 0; i < test.length(); i++){
+                    if(Character.isLetter(ch[i])){
+                        letter ++ ;
+                    }
+                    else if(Character.isDigit(ch[i])){
+                        num ++ ;
+                    }
+                    else if(Character.isSpaceChar(ch[i])){
+                        space ++ ;
+                    }
+                    else{
+                        otherchar ++;
+                    }
+                }
+                System.out.println("The string is : " +test);
+                System.out.println("letter: " + letter);
+                System.out.println("space: " + space);
+                System.out.println("number: " + num);
+                System.out.println("other: " + otherchar);
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 25: Display the Odd Numbers </h2>
+                <pre>
+    <code>
+        public class displayOddNum {
+            public static void main(String[] args) {
+                for (int i = 1; i < 100; i++) {
+                    if (i % 2 != 0) {
+                        System.out.println(i);
+                    }
+                }
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 26: Display the System Time </h2>
+                <pre>
+    <code>
+        public class displaySystemTime {
+            public static void main(String[] args) {
+                System.out.format("\nCurrent Date time: %tc%n\n", System.currentTimeMillis());
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 27: Create and Display a Unique Three-digit Number using 1, 2, 3, 4. </h2>
+                <pre>
+    <code>
+        public class displayThreeDigitNum {
+            public static void main(String[] args) {
+                int number = 0;
+                for (int i = 1; i <= 4; i++) {
+                    for (int j = 1; j <= 4; j++) {
+                        for (int k = 1; k <= 4; k++) {
+    
+                            if (k != i && k != j && i != j) {
+                                number++;
+                                System.out.println(i + " " + j + " " + k);
+                            }
+                        }
+                    }
+                }
+                System.out.println("Total number of the three-digit-number is : " + number);
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            
+
+            <section>
+                <h2>Program 28: Given Range of number divided my third Integer. </h2>
+                <pre>
+    <code>
+        public class gnRangeDivBy3rdInt {
+            public static void main(String[] args) {
+                int x = 1;
+                int y = 20;
+                int p = 3;
+                System.out.println(result(x, y, p));
+            }
+            
+            public static int result(int x, int y, int p) {
+                if (x % p == 0) {
+                    return (y / p - x / p + 1);
+                } else {
+                    return (y / p - x / p);
+                }
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 29: Check Whether Java is installed on your Computer.</h2>
+                <pre>
+    <code>
+        public class javaInstalledOnPC {
+            public static void main(String[] args) {
+                System.out.println("Java Version: " + System.getProperty("java.version"));
+                System.out.println("Java runtime version: " + System.getProperty("java.runtime.version"));
+                System.out.println("Java Home: " + System.getProperty("java.home"));
+                System.out.println("Java Vendor: " + System.getProperty("java.vendor"));
+                System.out.println("Java Vendor URL: " + System.getProperty("java.vendor.url"));
+                System.out.println("Java Class Path: " + System.getProperty("java.class.path"));
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 30: Largest of two Integer </h2>
+                <pre>
+    <code>
+        public class largestOfTwoInt {
+            public static void main(String[] args){
+                int num1,num2;
+                int result;
+                Scanner input = new Scanner(System.in);
+                System.out.print(" Enter the first Integer: " );
+                num1= input.nextInt();
+                System.out.print(" Enter the second Intesger: ");
+                num2= input.nextInt();
+                if (num1 > num2)
+                    result = num1;
+                else
+                    result = num2;
+                System.out.println(" Largest number: " +result);
+        
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 31: Given Number divisible by 3 and 5. </h2>
+                <pre>
+    <code>
+        public class printNumDiviBy3And5 {
+            public static void main(String args[]) {
+                System.out.println("Divided by 3: ");
+                for (int i = 1; i < 100; i++) {
+                    if (i % 3 == 0)
+                        System.out.print(i + ", ");
+                }
+                System.out.println("\nDivided by 5: ");
+                for (int i = 1; i < 100; i++) {
+                    if (i % 5 == 0)
+                        System.out.print(i + ", ");
+                }
+                System.out.println("\nDivided by 3 & 5: ");
+                for (int i = 1; i < 100; i++) {
+                    if (i % 3 == 0 && i % 5 == 0)
+                        System.out.print(i + ", ");
+                }
+                System.out.println("\n");
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 32: Check the given Input and returns True if it has common Integer. </h2>
+                <pre>
+    <code>
+        public class printNumDiviBy3And5 {
+            public static void main(String args[]) {
+                System.out.println("Divided by 3: ");
+                for (int i = 1; i < 100; i++) {
+                    if (i % 3 == 0)
+                        System.out.print(i + ", ");
+                }
+                System.out.println("\nDivided by 5: ");
+                for (int i = 1; i < 100; i++) {
+                    if (i % 5 == 0)
+                        System.out.print(i + ", ");
+                }
+                System.out.println("\nDivided by 3 & 5: ");
+                for (int i = 1; i < 100; i++) {
+                    if (i % 3 == 0 && i % 5 == 0)
+                        System.out.print(i + ", ");
+                }
+                System.out.println("\n");
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 33: Reverse the String. </h2>
+                <pre>
+    <code>
+        public class reverseString {
+            public static void main(String args[]) {
+                String str;
+                Scanner input = new Scanner(System.in);
+                System.out.print("Enter the String: ");
+                str = input.next();
+                System.out.print("This is the reverse order: ");
+                for (int i = str.length() - 1; i >= 0; i--) {
+                System.out.print (str.charAt(i));
+                }
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 34: Convert Seconds to Hours, Minutes and Seconds. </h2>
+                <pre>
+    <code>
+        public class secToHoursMinSec {
+            public static void main(String[] args) {
+                Scanner in = new Scanner(System.in);
+                System.out.print("Input seconds: ");
+                int seconds = in.nextInt();
+    
+                int S = seconds % 60;
+                int H = seconds / 60;
+                int M = H % 60;
+                H = H / 60;
+    
+                System.out.print(H + ":" + M + ":" + S);
+                System.out.print("\n");
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 35: Convert a string into lowercase. </h2>
+                <pre>
+    <code>
+        public class stringIntoLowercase {
+            public static void main(String[] args) {
+
+                Scanner in = new Scanner(System.in);
+                System.out.print("Input a String: ");
+                String line = in.nextLine();
+                line = line.toLowerCase();
+                System.out.println(line);
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 36: Calculate the Sum of two Integers and return True if the sum is equal to a Third integer. </h2>
+                <pre>
+    <code>
+        public class sumOf2IntWith3rdInt {
+            public static void main(String[] args) {
+                Scanner in = new Scanner(System.in);
+                System.out.print("Input the first number: ");
+                int x = in.nextInt();
+                System.out.print("Input the second number: ");
+                int y = in.nextInt();
+                System.out.print("Input the third number: ");
+                int z = in.nextInt();
+                System.out.print("The result is: " + sumoftwo(x, y, z));
+                System.out.print("\n");
+            }
+            public static boolean sumoftwo(int p, int q, int r) {
+                return ((p + q) == r || (q + r) == p || (r + p) == q);
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 37: Sum of the Integers Digit. </h2>
+                <pre>
+    <code>
+        public class sumOfIntDigit {
+            public static void main(String[] args) {
+                int number;
+                int sum=0;
+                Scanner input = new Scanner(System.in);
+                System.out.print("Enter the integer: ");
+                number = input.nextInt();
+                while(number>0) {
+                    sum = sum + (number % 10);
+                    number = number / 10;
+                }
+                System.out.println("The Count is: " +sum);
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 38: Accepts given Integer values and returns true if there is a common digit in last number. </h2>
+                <pre>
+    <code>
+        public class threeIntWithLastDigit {
+            public static void main(String[] args)
+            {
+                Scanner in = new Scanner(System.in);
+                System.out.print("Input the first number : ");
+                int x = in.nextInt();
+                System.out.print("Input the second number: ");
+                int y = in.nextInt();
+                System.out.print("Input the third number : ");
+                int z = in.nextInt();
+                System.out.print("The result is: "+test_last_digit(x, y, z,true));
+                System.out.print("\n");
+            }
+        
+            public static boolean test_last_digit(int p, int q, int r, boolean xyz) {
+                return (p % 10 == q % 10) || (p % 10 == r % 10) || (q % 10 == r % 10);
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 39: User Input of Product of two Integers. </h2>
+                <pre>
+    <code>
+        public class userInputOfProdOf2Num {
+            public static void main(String[] args){
+                int number1;
+                int number2;
+                Scanner input= new Scanner( System.in );
+                System.out.println("Input first number:");
+                number1= input.nextInt();
+                System.out.println("Input second number:");
+                number2=input.nextInt();
+                System.out.println(number1+ " X " + number2+ " = " + (number1*number2));
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 40: User Input of Various Operation. </h2>
+                <pre>
+    <code>
+        public class userInputOfVariousOper {
+            public static void main(String[] args){
+                int num1;
+                int num2;
+                Scanner input= new Scanner( System.in );
+                System.out.println("Input first number:");
+                num1= input.nextInt();
+                System.out.println("Input second number:");
+                num2=input.nextInt();
+                System.out.println(num1+ " + " + num2 + " = " + (num1+num2));
+                System.out.println(num1 + " - " + num2 + " = " + (num1 - num2));
+                System.out.println(num1+ " X " + num2 + " = " + (num1*num2));
+                System.out.println(num1+ " / " + num2 + " = " + (num1/num2));
+                System.out.println(num1+ " mod " + num2 + " = " + (num1%num2));
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 41: Extract the first half of a string of even length. </h2>
+                <pre>
+    <code>
+        public class firstHalfOfTheString {
+            public static void main(String[] args) {
+    
+                String main_string = "Haritha";
+                String substring = main_string.substring(0, main_string.length() / 2);
+                System.out.println("The first half of the string is: " +substring);
+            }
+        }
+    </code>
+                </pre>
+            </section>
+            
+            <section>
+                <h2>Program 42: Rotate an array of integers in left direction. </h2>
+                <pre>
+    <code>
+        public class rotateArrayinLeftDir {
+            public static void main(String[] args) {
+                
+                int[] array_nums = {10, 20, 30};
+                System.out.println("Original Array: " + Arrays.toString(array_nums));
+                int[] new_array_nums = {array_nums[1], array_nums[2], array_nums[0]};
+            System.out.println("Rotated Array: " + Arrays.toString(new_array_nums));
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 43: Larger value between first and last element of an array of Integers. </h2>
+                <pre>
+    <code>
+       public class largestValueinArray {
+        public static void main(String[] args) {
+
+            int[] array_nums = {20, 30, 40};
+            System.out.println("Original Array: " + Arrays.toString(array_nums));
+            int max_val = array_nums[0];
+            if (array_nums[2] >= max_val)
+                max_val = array_nums[2];
+            System.out.println("Larger value between first and last element: " + max_val);
+        }
+    }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 44: Swap the first and last elements of an array and create a new array. </h2>
+                <pre>
+    <code>
+        public class swapFirstLastIntOfArray {
+            public static void main(String[] args) {
+    
+                int[] array_nums = {10, 20, 40};
+                System.out.println("Original Array: " + Arrays.toString(array_nums));
+                int x = array_nums[0];
+                array_nums[0] = array_nums[array_nums.length - 1];
+                array_nums[array_nums.length - 1] = x;
+                System.out.println("New array after swapping the first and last elements: " + Arrays.toString(array_nums));
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 45: Largest Element between First, last, and Middle values from an Array of Integers. </h2>
+                <pre>
+    <code>
+        public class largestInArrayInt {
+
+            public static void main(String[] args) {
+                int[] array_nums = {20, 30, 40, 50, 67};
+                System.out.println("Original Array: " + Arrays.toString(array_nums));
+                int max_val = array_nums[0];
+    
+                if (max_val <= array_nums[array_nums.length - 1])
+                    max_val = array_nums[array_nums.length - 1];
+    
+                if (max_val <= array_nums[array_nums.length / 2])
+                    max_val = array_nums[array_nums.length / 2];
+                System.out.println("Largest element between first, last, and middle values: " + max_val);
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 46: Multiply corresponding elements of two Arrays of Integers. </h2>
+                <pre>
+    <code>
+        public class multiplyCorresOf2Array {
+            public static void main(String[] args) {
+    
+                String result = "";
+                int[] left_array = {1, 2, -5, 7};
+                int[] right_array = {1, 3, -5, -2};
+                System.out.println("\nArray1: " + Arrays.toString(left_array));
+                System.out.println("\nArray2: " + Arrays.toString(right_array));
+    
+                for (int i = 0; i < left_array.length; i++) {
+                    int num1 = left_array[i];
+                    int num2 = right_array[i];
+                    result += Integer.toString(num1 * num2) + " ";
+                }
+                System.out.println("\nResult: " + result);
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 47: Check if a String starts with a Specified word. </h2>
+                <pre>
+    <code>
+        public class stringStartsWithSpecfiedWord {
+            public static void main(String[] args) {
+    
+                String string1 = "Hello how are you?";
+                boolean startsWithSame = string1.startsWith("Hello");
+                System.out.println(startsWithSame);
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 48: Count the number of Even and Odd elements in a given Array of Integers. </h2>
+                <pre>
+    <code>
+        public class countEvenOddinArray {
+            public static void main(String[] args) {
+    
+                int[] nums = {1, 2, 3, 4, 5, 6, 7};
+                int count_even = 0, count_odd = 0;
+                System.out.println("Original Array: " + Arrays.toString(nums));
+                for (int i = 0; i < nums.length; i++) {
+                    if (nums[i] % 2 == 0) {
+                        count_even++;
+                    } else {
+                        count_odd++;
+                    }
+                }
+                System.out.printf("\nNumber of even elements in the array: %d", count_even);
+                System.out.printf("\nNumber of odd elements in the array: %d", count_odd);
+                System.out.printf("\n");
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 49:  Check if a specified array of integers contains 10 or 30. </h2>
+                <pre>
+    <code>
+        public class checkArrayContains10or30 {
+            public static void main(String[] args) {
+    
+                int[] array_nums = {10, 20, 40, 50, 60, 70, 80, 90};
+                int result = 1;
+                System.out.println("Original Array: "+ Arrays.toString(array_nums));
+    
+                for(int i = 0; i < array_nums.length; i++) {
+                    if(array_nums[i] == 10 || array_nums[i] == 30) {
+                      result = 0;
+                    }
+                }
+    
+                if (result == 1)
+                    System.out.printf(String.valueOf(false));
+                else
+                    System.out.printf(String.valueOf(true));
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 50: Check if a group of numbers at the start and end of a given array are same. </h2>
+                <pre>
+    <code>
+        public class startAndEndOfArraySame {
+            public static void main(String[] args) {
+    
+                int[] array_nums = {10, 20, 30, 40, 10, 20};
+                System.out.println("Original Array: " + Arrays.toString(array_nums));
+                int result = 0;
+                int l = 2;
+                int start = 0;
+                int end = array_nums.length - l;
+                for (; l > 0; l--) {
+                    if (array_nums[start] != array_nums[end]) {
+                        result = 1;
+                    } else {
+                        start++;
+                        end++;
+                    }
+                }
+                if (result == 1) {
+                    System.out.printf(String.valueOf(false));
+                } else {
+                    System.out.printf(String.valueOf(true));
+                }
+                System.out.printf("\n");
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+            <section>
+                <h2>Program 51: Create a New Array that is Left shifted from a given Array of Integers. </h2>
+                <pre>
+    <code>
+        public class leftShiftedOfArray {
+            public static void main(String[] args) {
+    
+                int[] array_number = {10, 20, 30, 40, 50};
+                System.out.println("Original Array: "+ Arrays.toString(array_number));
+    
+                if (array_number.length > 1) {
+                    int first = array_number[0];
+                    for (int i = 1; i < array_number.length; i++)
+                        array_number[i - 1] = array_number[i];
+                    array_number[array_number.length - 1] = first;
+                    System.out.println("New Array: "+Arrays.toString(array_number));
+                }
+            }
+        }
+    </code>
+                </pre>
+            </section>
+
+
+
+        
+
+
+       
+
+
+
+
+
+
+    </main>
+</body>
+</html>
